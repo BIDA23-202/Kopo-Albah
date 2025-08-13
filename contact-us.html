@@ -72,8 +72,8 @@
       </div>
 
       <!-- Contact Form -->
-      <form
-  action="https://formspree.io/f/mvgqdjwb" class="contact-form" id="contactForm"
+      <form class="contact-form" id="contactForm" 
+  action="https://formspree.io/f/mvgqdjwb"
   method="POST"
 >
   <label>
@@ -84,9 +84,12 @@
     Your message:
     <textarea name="message"></textarea>
   </label>
+        
         <label for="name">Full Name*</label>
         <input id="name" name="name" type="text" required placeholder="Your full name" />
 
+        <label for="email">Email Address*</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
 
         <label for="phone">Phone Number*</label>
         <input id="phone" name="phone" type="tel" required placeholder="+267 ..." />
@@ -101,7 +104,8 @@
                         <option value="safety">Plant Hire</option>
                         </select>
                 </label>
-        
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
 
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
@@ -116,24 +120,31 @@
         <h3>Kopo Albah Mining Enterprises</h3>
         <p>Safe • Reliable • Innovative mine-rigging solutions.</p>
         <div class="social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61576605021723&_rdc=1&_rdr" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+           <a href="https://www.facebook.com/profile.php?id=61576605021723&_rdc=1&_rdr" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <!-- Include PH&K Legacy Rigging Services link here if desired -->
         </div>
       </div>
       <div class="foot-links">
         <h4>Services</h4>
-        <a href="services.html">All Services</a>
-        <a href="mine-rigging.html">Mine Rigging</a>
-        <a href="equipment-services.html">Equipment Services</a>
-        <a href="safety-solutions.html">Safety Solutions</a>
-      </div>
+        <a href="#mobile-crane-hire">Mobile Crane Hire</a>
+        <a href="#rigging-service">Rigging Service</a>
+        <a href="#consulting-engineering">Consulting & Engineering</a>
+        <a href="#earth-moving-equipment">Earth Moving Equipment</a>
+        <a href="#plant-hire">Plant Hire</a>
+        <a href="#genset-tower-lights">Genset & Tower Lights</a>
+        <a href="#telehandler-forklift">Telehandler & Forklift</a>
+        <a href="#sky-jack">Sky Jack</a>
+        <a href="#blasting-pot">Blasting Pot</a>
+        <a href="#demolition">Demolition</a>
+            </div>
+
       <div class="foot-links">
         <h4>Company</h4>
         <a href="about-us.html">About Us</a>
         <a href="projects.html">Projects</a>
         <a href="work-for-us.html">Careers</a>
-        <a href="news.html">News</a>
+        <a href="index.html">Home</a>
       </div>
       <div class="foot-contact">
         <h4>Contact</h4>
@@ -141,7 +152,6 @@
         <p><i class="fas fa-phone"></i> +267 72 386 492</p>
         <p><i class="fas fa-envelope"></i> info.kopoalbah@gmail.com</p>
         <p><i class="fas fa-envelope"></i> PHK.LegacyRS@gmail.com</p>
-        <p><strong>Emergency 24/7</strong><br />+267 72 345 678</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -157,6 +167,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
