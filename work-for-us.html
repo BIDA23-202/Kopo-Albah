@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work for Us | Kopo Albah Mining Enterprises</title>
+  <meta name="description" content="Learn about career opportunities and partnership potential with Kopo Albah Mining Enterprises in Botswana." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    /* Embedded CSS */
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #1c1c1c; /* dark charcoal */
+      color: #f0e6d2; /* off-white */
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a {
+      color: #d4af37; /* gold */
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      color: #b59123; /* darker gold */
+      outline: none;
+    }
+    /* Header styles */
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: #1c1c1c;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.8);
+      padding: 0.75rem 1.5rem;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-block img {
+      height: 40px;
+    }
+    .logo-text {
+      color: #f0e6d2;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .nav-menu {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-menu li a {
+      color: #f0e6d2;
+      font-weight: 500;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .nav-menu li a:hover,
+    .nav-menu li a:focus,
+    .nav-menu li a.active {
+      color: #d4af37;
+    }
+    .nav-menu li.has-dropdown:hover > ul,
+    .nav-menu li.has-dropdown:focus-within > ul {
+      display: block;
+    }
+    .nav-menu ul {
+      display: none;
+      position: absolute;
+      background-color: #1c1c1c;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.8);
+      z-index: 1000;
+    }
+    .nav-menu ul li {
+      margin-bottom: 0.5rem;
+    }
+    .nav-menu ul li:last-child {
+      margin-bottom: 0;
+    }
+    .nav-menu ul li a {
+      font-weight: 400;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      color: #f0e6d2;
+    }
+    .nav-menu ul li a:hover,
+    .nav-menu ul li a:focus {
+      color: #d4af37;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .emergency-btn {
+      background: #e53e3e; /* red */
+      color: #f0e6d2;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+    .emergency-btn:hover,
+    .emergency-btn:focus {
+      background: #c53030;
+      outline: none;
+    }
+    /* Hamburger menu for mobile */
+    .hamburger {
+      display: none;
+      background: transparent;
+      border: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: #f0e6d2;
+      border-radius: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+    /* Page header styling */
+    .page-header {
+      padding: 120px 20px 40px;
+      text-align: center;
+      background: #222;
+    }
+    .page-header h1 {
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      color: #d4af37;
+      font-size: 2.5rem;
+    }
+    .page-header p {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    /* Main content */
+    .page-content {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      color: #f0e6d2;
+    }
+    .page-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .page-content p {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+    /* Contact info box */
+    .contact-info-box {
+      margin-top: 3rem;
+      text-align: left;
+      background-color: #2a2a2a;
+      padding: 30px;
+      border-radius: 8px;
+      color: #d4af37;
+    }
+    .contact-info-box h3 {
+      margin-bottom: 1rem;
+    }
+    .contact-info-box address p {
+      font-style: normal;
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    /* Footer */
+    .footer {
+      background-color: #1c1c1c;
+      color: #f0e6d2;
+      padding: 60px 20px 20px;
+      font-size: 0.9rem;
+    }
+    .footer-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto 2rem;
+      gap: 40px;
+    }
+    .foot-brand img {
+      height: 40px;
+      margin-bottom: 1rem;
+    }
+    .foot-brand h3 {
+      margin-bottom: 1rem;
+    }
+    .foot-brand p {
+      opacity: 0.8;
+      margin-bottom: 1rem;
+    }
+    .social {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .social a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: #d4af37;
+      color: #1c1c1c;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .social a:hover,
+    .social a:focus {
+      transform: translateY(-3px);
+      outline: none;
+    }
+    .foot-links {
+      min-width: 160px;
+    }
+    .foot-links h4 {
+      margin-bottom: 1rem;
+      color: #d4af37;
+      font-weight: 600;
+    }
+    .foot-links a {
+      display: block;
+      color: #f0e6d2;
+      opacity: 0.8;
+      text-decoration: none;
+      margin-bottom: 0.4rem;
+      transition: opacity 0.3s ease;
+    }
+    .foot-links a:hover,
+    .foot-links a:focus {
+      opacity: 1;
+      outline: none;
+    }
+    .foot-contact h4 {
+      margin-bottom: 1rem;
+      color: #d4af37;
+      font-weight: 600;
+    }
+    .foot-contact p {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .legal-links a {
+      color: #f0e6d2;
+      opacity: 0.8;
+      margin-left: 1rem;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    .legal-links a:hover,
+    .legal-links a:focus {
+      opacity: 1;
+      outline: none;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+      .footer-flex {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar container">
+      <div class="logo-block">
+        <img src="images/kopo-albah-logo.png" alt="Kopo Albah Mining Enterprises" />
+        <span class="logo-text">Kopo Albah</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <a href="about-us.html">About Us <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="about-us.html">Company Values</a></li>
+            <li><a href="about-us.html#team">Our Team</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="services.html">All Services</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a class="active" href="work-for-us.html">Work for Us</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="emergency-btn" href="tel:+26777187873">
+          <i class="fas fa-phone"></i> Emergency +267 77 187 873
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Work for Us</h1>
+      <p>Partnering with clients to deliver exceptional mine rigging and equipment solutions.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="page-content">
+    <div class="container">
+      <h2>We’re Looking to Work with You</h2>
+      <p>
+        At <strong>Kopo Albah Mining Enterprises</strong>, our focus is on building lasting partnerships with clients and providing tailored rigging and equipment services—
+        not just hiring employees. Currently, we do not have any vacancies available, but we may have opportunities in the future.
+      </p>
+      <p>
+        We encourage experienced professionals and companies interested in collaborating with us to reach out and introduce themselves. Whether you're seeking partnership opportunities, subcontract work, or consultancy, we welcome open dialogue.
+      </p>
+
+      <div class="contact-info-box">
+        <h3>Contact Information</h3>
+        <p>You can reach us at the following:</p>
+        <address>
+          <p><i class="fas fa-map-marker-alt"></i> Private Bag 001, Selibe Phikwe</p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+26777187873">+267 77 187 873</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:+26772386492">+267 72 386 492</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:info.kopoalbah@gmail.com">info.kopoalbah@gmail.com</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:PHK.LegacyRS@gmail.com">PHK.LegacyRS@gmail.com</a></p>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-flex">
+      <div class="foot-brand">
+        <img src="images/kopo-albah-logo.png" alt="Kopo Albah Mining Enterprises" />
+        <h3>Kopo Albah Mining Enterprises</h3>
+        <p>Safe • Reliable • Innovative mine-rigging solutions.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/PHKLegacyRiggingServices" aria-label="PH&K Legacy Rigging Services Facebook" target="_blank" rel="noopener">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="foot-links">
+        <h4>Services</h4>
+        <a href="services.html">All Services</a>
+        <a href="mine-rigging.html">Mine Rigging</a>
+        <a href="equipment-services.html">Equipment Services</a>
+        <a href="safety-solutions.html">Safety Solutions</a>
+      </div>
+
+      <div class="foot-links">
+        <h4>Company</h4>
+        <a href="about-us.html">About Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="work-for-us.html">Work for Us</a>
+        <a href="news.html">News</a>
+      </div>
+
+      <div class="foot-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i> +267 77 187 873</p>
+        <p><i class="fas fa-phone"></i> +267 72 386 492</p>
+        <p><i class="fas fa-envelope"></i> info.kopoalbah@gmail.com</p>
+        <p><i class="fas fa-envelope"></i> PHK.LegacyRS@gmail.com</p>
+        <p><strong>Emergency 24/7</strong><br />+267 72 345 678</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Kopo Albah Mining Enterprises. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle script
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Close menu on link click (for mobiles)
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
