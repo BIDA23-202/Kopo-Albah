@@ -8,6 +8,81 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+<style>
+/* --- CONTACT FORM STYLES --- */
+.contact-form {
+  background: #222;
+  padding: 32px 24px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form label {
+  color: #f0e6d2;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #161616;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px 14px;
+  outline: none;
+  margin-bottom: 0;
+  width: 100%;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d4af37;
+  background-color: #23211d;
+}
+
+.contact-form button {
+  background: #d4af37;
+  color: #222;
+  border: none;
+  padding: 12px 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.contact-form button:hover,
+.contact-form button:focus {
+  background: #b59123;
+}
+
+#form-message {
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
+/* Responsive for mobile */
+@media (max-width:600px) {
+  .contact-form {
+    padding: 18px 6px;
+    max-width: 100%;
+  }
+}
+</style>
+
 </head>
 <body>
   <!-- Header -->
@@ -153,4 +228,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
