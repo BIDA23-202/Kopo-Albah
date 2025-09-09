@@ -69,45 +69,33 @@
           <p><i class="fas fa-envelope"></i> <a href="mailto:info.kopoalbah@gmail.com" style="color: inherit; text-decoration: none;">info.kopoalbah@gmail.com</a></p>
         </address>
       </div>
+<div>
+   <form action="https://formspree.io/f/mvgqdjwb" method="POST" id="contactForm">
+  <label for="name">Full Name*</label>
+  <input id="name" name="name" type="text" required placeholder="Your full name" />
 
-      <!-- Contact Form -->
-      <form class="contact-form" id="contactForm" 
-  action="https://formspree.io/f/mvgqdjwb"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-        
-        <label for="name">Full Name*</label>
-        <input id="name" name="name" type="text" required placeholder="Your full name" />
+  <label for="email">Email Address*</label>
+  <input id="email" name="email" type="email" required placeholder="you@example.com" />
 
-        <label for="email">Email Address*</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+  <label for="phone">Phone Number*</label>
+  <input id="phone" name="phone" type="tel" required placeholder="+267 ..." />
 
-        <label for="phone">Phone Number*</label>
-        <input id="phone" name="phone" type="tel" required placeholder="+267 ..." />
+  <label for="subject">Subject</label>
+  <input id="subject" name="subject" type="text" placeholder="Subject of your message" />
 
-        <label for="subject">Subject
-         <select name="service">
-                        <option value="">Select a service</option>
-                        <option value="mobile-crane-hire">Mobile Crane Hire</option>
-                        <option value="equipment">Rigging Service</option>
-                        <option value="safety">Consulting & Engineering</option>
-                         <option value="equipment">Earth Moving Equipment</option>
-                        <option value="safety">Plant Hire</option>
-                        </select>
-                </label>
-        <label for="message">Message*</label>
-        <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+  <label for="message">Message*</label>
+  <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+  
+  <!-- Optional: Custom email subject line for receiver -->
+  <input type="hidden" name="_subject" value="New website contact form message" />
 
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+  <!-- Optional: Redirect (after successful submission) -->
+  <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html" />
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+    </div>
+  </section>
     </div>
   </section>
 
@@ -165,3 +153,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
