@@ -145,3 +145,37 @@ if (statsSection) {
     
     statsObserver.observe(statsSection);
 }
+    
+// FormSpree Error Message
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  }).then(response => {
+    if (response.ok) {
+      form.reset();
+      document.getElementById('form-message').style.display = 'block';
+      document.getElementById('form-message').style.color = 'green';
+      document.getElementById('form-message').textContent = "Thank you! Your message has been sent.";
+    } else {
+      response.json().then(data => {
+        let error = (data.errors && data.errors.length > 0) ? data.errors.map(e => e.message).join(", ") : "Oops! There was a problem submitting your form";
+        document.getElementById('form-message').style.display = 'block';
+        document.getElementById('form-message').style.color = 'red';
+        document.getElementById('form-message').textContent = error;
+      });
+    }
+  }).catch(error => {
+    document.getElementById('form-message').style.display = 'block';
+    document.getElementById('form-message').style.color = 'red';
+    document.getElementById('form-message').textContent = "Sorry, there was a problem sending your message.";
+  });
+});
+</script>
