@@ -1,3 +1,4 @@
+
 /* ===== GLOBAL STYLES ===== */
 * {
     margin: 0;
@@ -226,7 +227,7 @@ p { margin-bottom: 1rem; }
 .hero {
     background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
-   url("Images/mining-rigging-operation.png");
+    url("images/mining-rigging-operation.png");
     
   background-size: cover;
   background-position: center;
@@ -336,27 +337,156 @@ p { margin-bottom: 1rem; }
     margin-bottom: 3rem;
 }
 
-.service-card {
-  background: #222;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 16px;
-}
-.service-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  margin-bottom: 12px;
-  display: block;
-}
-@media (max-width: 600px) {
-  .service-img { height: 120px; }
+#mobile-crane-hire{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("images/mobile-crane-hire.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+#rigging-service{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/rigging-service.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#consulting-engineering{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/consulting.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#earth-moving-equipment{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/earth-moving.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#plant-hire{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/plant-hire.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#genset-tower-lights{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/tower-lights.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#telehandler-forklift{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/telehandler.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#sky-jack{background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/sky-jack.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
+
+
+#blasting-pot{background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/blasting-pot.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
+
+#demolition{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
+    url("Images/demolition.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.service-card {
+    background: var(--text-light);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-grid {
+  color: white; /* Default text color */
+}
+
+.services-grid h3 {
+  color: #FFD700; /* Primary yellow for headings */
+}
+
+.services-grid p,
+.services-grid ul,
+.services-grid li {
+  color: white; /* Ensures all other text is white */
+}
+
+
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.service-card h3 {
+    margin-bottom: 1rem;
+    
+}
+
+.service-card ul {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.service-card li {
+    padding: 5px 0;
+    
+}
+
+.service-card li:before {
+    content: "✓";
+    color: var(--success);
+    font-weight: bold;
+    margin-right: 10px;
+}
 
 .learn-link {
     color: var(--primary-gold);
@@ -872,65 +1002,3 @@ p { margin-bottom: 1rem; }
         padding: 20px;
     }
 }
-
-.contact-form label {
-  color: #f0e6d2;
-  font-size: 1rem;
-  margin-bottom: 4px;
-  font-weight: 500;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background: #161616;
-  color: #fff;
-  border: 1px solid #555;
-  border-radius: 5px;
-  font-size: 1rem;
-  padding: 10px 14px;
-  outline: none;
-  margin-bottom: 0;
-  width: 100%;
-  resize: vertical;
-  box-sizing: border-box;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #d4af37;
-  background-color: #23211d;
-}
-
-.contact-form button {
-  background: #d4af37;
-  color: #222;
-  border: none;
-  padding: 12px 0;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background 0.2s;
-}
-.contact-form button:hover,
-.contact-form button:focus {
-  background: #b59123;
-}
-
-#form-message {
-  text-align: center;
-  font-size: 1.05rem;
-  font-weight: 500;
-  padding-top: 8px;
-}
-
-/* Responsive for mobile */
-@media (max-width:600px) {
-  .contact-form {
-    padding: 18px 6px;
-    max-width: 100%;
-  }
-}
-
-
