@@ -126,13 +126,13 @@ p { margin-bottom: 1rem; }
 }
 
 .logo-block img {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
 .logo-text {
     color: var(--text-light);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -992,6 +992,7 @@ p { margin-bottom: 1rem; }
         padding: 20px;
     }
 }
+
 
 
 
