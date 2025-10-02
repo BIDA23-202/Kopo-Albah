@@ -195,16 +195,6 @@ p { margin-bottom: 1rem; }
     gap: 20px;
 }
 
-.emergency-btn {
-    background: var(--danger);
-    color: var(--text-light);
-    padding: 8px 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
 
 .hamburger {
     display: none;
@@ -340,7 +330,7 @@ p { margin-bottom: 1rem; }
 #mobile-crane-hire{
     background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Tint layer */
-    url("images/mobile-crane-hire.jpg");
+    url("Images/mobile-crane-hire.jpg");
     
   background-size: cover;
   background-position: center;
@@ -1002,3 +992,4 @@ p { margin-bottom: 1rem; }
         padding: 20px;
     }
 }
+
