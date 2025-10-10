@@ -14,7 +14,7 @@
   <header class="header">
     <nav class="navbar container">
       <div class="logo-block">
-        <img src="Images/kopo-albah-logo.png" alt="Kopo Albah Mining Enterprises" />
+        <img src="images/kopo-albah-logo.png" alt="Kopo Albah Mining Enterprises" />
         <span class="logo-text">Kopo Albah</span>
       </div>
       <ul class="nav-menu" id="navMenu">
@@ -61,74 +61,128 @@
       <h1>Our Projects</h1>
       <p>A showcase of recent successful mining rigging and equipment projects by Kopo Albah in Botswana.</p>
     </div>
+    <div class="filter-buttons" role="group" aria-label="Project category filters">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+                    <button class="filter-btn" data-filter="diamond" aria-pressed="false">Diamond</button>
+                    <button class="filter-btn" data-filter="copper" aria-pressed="false">Copper</button>
+                    <button class="filter-btn" data-filter="coal" aria-pressed="false">Coal</button>
+                    <button class="filter-btn" data-filter="other" aria-pressed="false">Other</button>
+                </div>
   </section>
 
   <!-- Projects Grid -->
-  <section class="projects page-content">
-    <div class="container">
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <figure class="project-item card" tabindex="0" aria-labelledby="proj1-title" aria-describedby="proj1-desc">
-          <div class="project-image">
-            <img src="images/project-orapa-mine.jpg" alt="Orapa Diamond Mine heavy-lift and plant installation project" />
-            <div class="project-overlay">Orapa Diamond Mine</div>
-          </div>
-          <figcaption>
-            <h3 id="proj1-title">Orapa Diamond Mine</h3>
-            <p id="proj1-desc">Managed heavy-lift operations and turnkey plant installation at Botswana’s largest diamond mine.</p>
-          </figcaption>
-        </figure>
+    <section class="projects" id="main-content">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <figure class="project-item diamond" tabindex="0">
+                    <div class="project-image">
+                        <img src="Images/demolition.jpg" alt="Orapa Diamond Mine Project showing mining operations and excavation equipment">
+                        <div class="project-overlay">
+                            <span class="project-date">Completed 2021</span>
+                            <span class="project-category">Diamond Mining</span>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h3>Orapa Diamond Mine</h3>
+                        <p>Comprehensive mining operations and infrastructure development for Botswana's largest diamond mine, including excavation, processing facilities, and environmental management systems.</p>
+                        <div class="project-details">
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Botswana</span>
+                            <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2018-2021</span>
+                        </div>
+                    </figcaption>
+                </figure>
 
-        <!-- Project 2 -->
-        <figure class="project-item card" tabindex="0" aria-labelledby="proj2-title" aria-describedby="proj2-desc">
-          <div class="project-image">
-            <img src="images/project-jwaneng-mine.jpg" alt="Jwaneng Mine structural assembly and equipment rigging" />
-            <div class="project-overlay">Jwaneng Diamond Mine</div>
-          </div>
-          <figcaption>
-            <h3 id="proj2-title">Jwaneng Diamond Mine</h3>
-            <p id="proj2-desc">Executed complex structural assembly and rigging logistics to optimize mine expansion projects.</p>
-          </figcaption>
-        </figure>
+                <!-- Project 2 -->
+                <figure class="project-item diamond" tabindex="0">
+                    <div class="project-image">
+                        <img src="Images/demolition.jpg" alt="Jwaneng Diamond Mine Project showing pit expansion and mining infrastructure">
+                        <div class="project-overlay">
+                            <span class="project-date">Completed 2022</span>
+                            <span class="project-category">Diamond Mining</span>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h3>Jwaneng Diamond Mine</h3>
+                        <p>Expansion project for the world's richest diamond mine by value, including pit expansion, waste management solutions, and implementation of advanced mining technologies.</p>
+                        <div class="project-details">
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Botswana</span>
+                            <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2019-2022</span>
+                        </div>
+                    </figcaption>
+                </figure>
 
-        <!-- Project 3 -->
-        <figure class="project-item card" tabindex="0" aria-labelledby="proj3-title" aria-describedby="proj3-desc">
-          <div class="project-image">
-            <img src="images/project-copper-mine.jpg" alt="BCL Copper Mine equipment maintenance and rigging service" />
-            <div class="project-overlay">BCL Copper Mine</div>
-          </div>
-          <figcaption>
-            <h3 id="proj3-title">BCL Copper Mine</h3>
-            <p id="proj3-desc">Provided ongoing equipment servicing, rigging support, and emergency response solutions.</p>
-          </figcaption>
-        </figure>
+                <!-- Project 3 -->
+                <figure class="project-item copper" tabindex="0">
+                    <div class="project-image">
+                        <img src="Images/demolition.jpg" alt="BCL Copper Mine Project showing underground mining systems and processing facilities">
+                        <div class="project-overlay">
+                            <span class="project-date">Completed 2020</span>
+                            <span class="project-category">Copper Mining</span>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h3>BCL Copper Mine</h3>
+                        <p>Rehabilitation and modernization of copper-nickel mining operations, including underground mining systems, processing plant upgrades, and implementation of sustainable mining practices.</p>
+                        <div class="project-details">
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Selebi-Phikwe, Botswana</span>
+                            <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2017-2020</span>
+                        </div>
+                    </figcaption>
+                </figure>
 
-        <!-- Project 4 -->
-        <figure class="project-item card" tabindex="0" aria-labelledby="proj4-title" aria-describedby="proj4-desc">
-          <div class="project-image">
-            <img src="images/project-solwezi-mine.jpg" alt="Solwezi Mining Project Heavy Equipment Rigging" />
-            <div class="project-overlay">Solwezi Mining Project (Zambia)</div>
-          </div>
-          <figcaption>
-            <h3 id="proj4-title">Solwezi Mining Project</h3>
-            <p id="proj4-desc">International rigging project delivering structural moves and plant relocations across borders.</p>
-          </figcaption>
-        </figure>
+                <!-- Project 4 -->
+                <figure class="project-item other" tabindex="0">
+                    <div class="project-image">
+                        <img src="Images/demolition.jpg" alt="Solwezi Mining Project showing mineral exploration and initial infrastructure development">
+                        <div class="project-overlay">
+                            <span class="project-date">Ongoing</span>
+                            <span class="project-category">Mineral Exploration</span>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h3>Solwezi Mining Project</h3>
+                        <p>Large-scale mineral exploration and development project in Zambia's copper belt, including geological surveys, feasibility studies, and initial infrastructure development.</p>
+                        <div class="project-details">
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Solwezi, Zambia</span>
+                            <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2020-Present</span>
+                        </div>
+                    </figcaption>
+                </figure>
 
-        <!-- Add as many projects as needed -->
-      </div>
+                <!-- Project 5 (New) -->
+                <figure class="project-item coal" tabindex="0">
+                    <div class="project-image">
+                        <img src="Images/demolition.jpg" alt="Morupule Coal Mine Project showing underground mining systems and conveyor infrastructure">
+                        <div class="project-overlay">
+                            <span class="project-date">Completed 2023</span>
+                            <span class="project-category">Coal Mining</span>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h3>Morupule Coal Mine</h3>
+                        <p>Expansion and modernization of Botswana's primary coal mining operation, including new underground mining systems, conveyor infrastructure, and environmental compliance upgrades.</p>
+                        <div class="project-details">
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Palapye, Botswana</span>
+                            <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2020-2023</span>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
 
-      <div style="text-align: center; margin-top: 3rem;">
-        <a href="contact-us.html" class="btn btn-primary">Request Project Consultation</a>
-      </div>
-    </div>
-  </section>
-
+            <!-- Call to Action -->
+            <div class="project-cta">
+                <h2>Have a Mining Project in Mind?</h2>
+                <p>Our team of experienced mining professionals is ready to help you bring your project to life with our comprehensive range of mining services.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-flex">
       <div class="foot-brand">
-        <img src="Images/kopo-albah-logo.png" alt="Kopo Albah Mining Enterprises" />
+        <img src="images/kopo-albah-logo.png" alt="Kopo Albah Mining Enterprises" />
         <h3>Kopo Albah Mining Enterprises</h3>
         <p>Safe • Reliable • Innovative mine-rigging solutions.</p>
         <div class="social">
@@ -178,6 +232,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="projects.js"></script>
 </body>
 </html>
-
